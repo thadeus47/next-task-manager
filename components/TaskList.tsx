@@ -10,7 +10,7 @@ type Task = {
     { id: 3, title: 'Build CRUD APIs', completed: false },
   ];
 
-  export default function TaskList() {
+  const TaskList = () => {
     return (
       <ul className="w-full max-w-md bg-white rounded-md shadow-md p-4">
         {tasks.map((task) => (
@@ -24,3 +24,6 @@ type Task = {
       </ul>
     );
   }
+
+
+  export default TaskList;
